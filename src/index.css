@@ -1,4 +1,5 @@
 :root {
+  --body-font-color: #2b2d42;
   --primary-color: #c2bbf0;
   --seconary-color: #a9a3d3;
   --tertiary-color: #f7f7f7;
@@ -9,7 +10,7 @@
 
 body {
   font-family: var(--default-font-family);
-  color: #2b2d42;
+  color: var(--body-font-color);
 }
 
 .hero {
@@ -81,7 +82,7 @@ body {
 }
 
 .about-me i {
-  color: #2b2d42;
+  color: var(--body-font-color);
   font-size: 60px;
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -192,6 +193,23 @@ body {
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.contact-links a {
+  color: var(--body-font-color);
+}
+
+.contact-links a:hover {
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.back-to-top {
+  text-align: right;
 }
 
 @media (max-width: 900px) {
