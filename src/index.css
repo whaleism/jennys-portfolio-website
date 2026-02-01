@@ -117,26 +117,28 @@ body {
   }
 }
 
-.my-skills {
+.my-skills,
+.contact {
   background-color: var(--tertiary-color);
   padding: 80px;
 }
 
 .my-skills h4,
-.my-work h4 {
+.my-work h4,
+.contact h4 {
   font-family: var(--secondary-font-family);
   font-size: 35px;
   font-weight: var(--section-font-weight);
 }
 
 .my-skills i,
-.my-work i {
+.my-work i,
+.contact i {
   font-size: 25px;
   line-height: 0;
 }
 
 .my-skills ul {
-  color: white;
   margin: 50px 0;
 }
 
@@ -181,6 +183,15 @@ body {
 .built-work-styling {
   background-color: var(--seconary-color);
   padding: 5px;
+}
+
+.contact-body-style {
+  background-color: var(--seconary-color);
+  padding: 10px 50px;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
