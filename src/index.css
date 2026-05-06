@@ -17,6 +17,18 @@
   --section-font-weight: 300;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(0, 157, 255), rgba(255, 0, 255));
+}
+
 header {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
@@ -49,7 +61,10 @@ header {
 .nav-links {
   display: flex;
   gap: 2rem;
-  list-style: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 li a {
@@ -217,6 +232,7 @@ section {
   align-items: baseline;
   border: 2px solid black;
   border-radius: 3rem;
+  display: grid;
   cursor: pointer;
   flex-direction: column;
   justify-content: left;
@@ -255,18 +271,6 @@ section {
 
 .card-placeholder h3 {
   font-style: italic;
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgb(219, 219, 219);
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, rgba(0, 157, 255), rgba(255, 0, 255));
 }
 
 .projects-grid {
@@ -314,4 +318,65 @@ section {
 .project-card h3 {
   font-size: 2rem;
   font-weight: 500;
+}
+
+.input-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.input-box input {
+  border: 2px solid black;
+  border-radius: 3rem;
+  font-size: 3rem;
+  padding: 2rem 8rem;
+}
+
+.input-box input::placeholder {
+  font-size: 3rem;
+}
+
+.input {
+  position: relative;
+}
+
+.input i {
+  font-size: 4rem;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+footer {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 10rem;
+  left: 0;
+  width: 100%;
+}
+
+footer ul {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
+footer ul li a {
+  color: black;
+  font-weight: 600;
+}
+
+.copyright {
+  font-weight: 300;
+  margin-top: 2rem;
 }
