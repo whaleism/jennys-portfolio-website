@@ -98,3 +98,92 @@ li a:hover::before {
   font-size: 2rem;
   display: none;
 }
+
+section {
+  min-height: 100vh;
+  padding: 8rem 12%;
+  position: relative;
+  width: 100%;
+}
+
+.about {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about .about-container {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.about img {
+  display: block;
+  border-radius: 50%;
+  height: auto;
+  width: 30vw;
+}
+
+.info-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.info-box h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.info-box span {
+  background: linear-gradient(to right, rgba(255, 0, 255), rgba(0, 157, 255));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.socials i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+  transform: scale(1.1);
+}
