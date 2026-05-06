@@ -187,3 +187,84 @@ section {
 .socials i:hover {
   transform: scale(1.1);
 }
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.experience-info {
+  align-items: center;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.experience img {
+  width: 24vw;
+  border-radius: 3rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-card {
+  align-items: baseline;
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: left;
+  padding: 3rem;
+  transition: 0.2s ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.02);
+  background-color: black;
+  color: white;
+}
+
+.grid-card i {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid-card span {
+  background: linear-gradient(to right, rgba(0, 157, 255), rgba(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card-placeholder {
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-placeholder:hover {
+  border: none;
+}
+
+.card-placeholder h3 {
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(0, 157, 255), rgba(255, 0, 255));
+}
