@@ -107,6 +107,10 @@ li a:hover::before {
   transform: scale(1.03);
 }
 
+.visit-btn a {
+  color: white;
+}
+
 #menu-icon {
   font-size: 2rem;
   display: none;
@@ -174,9 +178,11 @@ section {
 .btn {
   border: 2px solid black;
   border-radius: 3rem;
+  color: black;
   cursor: pointer;
   font-weight: 500;
   padding: 0.5rem 1.5rem;
+  text-decoration: none;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
 }
@@ -192,6 +198,7 @@ section {
 }
 
 .socials i {
+  color: black;
   cursor: pointer;
   font-size: 2.5rem;
   transition: 0.2s ease-in-out;
